@@ -48,6 +48,8 @@
     </Style>
 
     <Style x:Key="TransparentTextBoxStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="Template">
             <Setter.Value>
@@ -102,8 +104,6 @@
                                         Visibility="Collapsed" />
                                     <TextBox
                                         x:Name="PART_Editor"
-                                        HorizontalAlignment="Stretch"
-                                        VerticalAlignment="Center"
                                         CharacterCasing="{Binding Path=CharacterCasing, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=TwoWay}"
                                         Foreground="{Binding Path=Foreground, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=OneWay}"
                                         MaxLength="{Binding Path=MaxLength, RelativeSource={RelativeSource Mode=TemplatedParent}, Mode=TwoWay}"
