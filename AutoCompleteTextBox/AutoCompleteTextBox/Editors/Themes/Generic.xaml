@@ -113,6 +113,7 @@
                             <Popup
                                 x:Name="PART_Popup"
                                 MinWidth="{TemplateBinding ActualWidth}"
+                                Width="{TemplateBinding ActualWidth}"
                                 MinHeight="25"
                                 MaxHeight="600"
                                 AllowsTransparency="True"
@@ -125,7 +126,7 @@
                                     Background="{Binding Path=SuggestionBackground, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=editors:AutoCompleteTextBox}, Mode=OneWay}"
                                     BorderBrush="Gray"
                                     BorderThickness="1"
-                                    CornerRadius="5">
+                                    CornerRadius="1">
                                     <Grid Background="{Binding Path=SuggestionBackground, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=editors:AutoCompleteTextBox}, Mode=OneWay}">
                                         <ListBox
                                             x:Name="PART_Selector"
@@ -137,7 +138,7 @@
                                             ItemContainerStyle="{StaticResource ResourceKey=TextBoxSuggestionItemStyle}"
                                             ItemTemplate="{TemplateBinding ItemTemplate}"
                                             ItemTemplateSelector="{TemplateBinding ItemTemplateSelector}"
-                                            ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                                            ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                                             ScrollViewer.VerticalScrollBarVisibility="Auto" />
                                         <Border Visibility="{Binding Path=IsLoading, RelativeSource={RelativeSource Mode=TemplatedParent}, Converter={StaticResource ResourceKey=BoolToVisConverter}}">
                                             <ContentPresenter ContentSource="LoadingContent" />
