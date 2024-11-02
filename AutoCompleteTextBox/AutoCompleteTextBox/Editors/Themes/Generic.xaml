@@ -17,8 +17,8 @@
                             <Setter Property="IsSelected" Value="True" />
                         </Trigger>
                         <Trigger Property="IsSelected" Value="True">
-                            <Setter TargetName="ContentBorder" Property="Background" Value="{x:Static SystemColors.HighlightBrush}" />
-                            <Setter Property="TextElement.Foreground" Value="{x:Static SystemColors.HighlightTextBrush}" />
+                            <Setter TargetName="ContentBorder" Property="Background" Value="{DynamicResource {x:Static SystemColors.HighlightBrush}}" />
+                            <Setter Property="TextElement.Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrush}}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -38,8 +38,8 @@
                             <Setter Property="IsSelected" Value="True" />
                         </Trigger>
                         <Trigger Property="IsSelected" Value="True">
-                            <Setter TargetName="ContentBorder" Property="Background" Value="{x:Static SystemColors.HighlightBrush}" />
-                            <Setter Property="TextElement.Foreground" Value="{x:Static SystemColors.HighlightTextBrush}" />
+                            <Setter TargetName="ContentBorder" Property="Background" Value="{DynamicResource {x:Static SystemColors.HighlightBrush}}" />
+                            <Setter Property="TextElement.Foreground" Value="{DynamicResource {x:Static SystemColors.HighlightTextBrush}}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
