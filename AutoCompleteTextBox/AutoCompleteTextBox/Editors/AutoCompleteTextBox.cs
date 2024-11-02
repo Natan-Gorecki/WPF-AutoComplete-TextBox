@@ -487,6 +487,11 @@ namespace AutoCompleteTextBox.Editors
             }
         }
 
+        public void CommitValue()
+        {
+            OnSelectionAdapterCommit(SelectionAdapter.EventCause.Other);
+        }
+
         private void OnSelectionAdapterSelectionChanged()
         {
             ScrollToSelectedItem();
